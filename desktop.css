@@ -1,0 +1,169 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+/*   font-family: helvetica, arial, sans-serif; */
+  margin: 0;
+}
+
+.topbar{
+  background-color: #09A7A1;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.topbar .logo{
+  display: flex;
+  align-self: flex-start;
+  float: left;
+  margin-left: 20px;
+}
+
+.name{
+  margin-left: 10px;
+  font-size: 35px;
+  font-weight: 800;
+  align-self: center;
+  color: #1E1840;
+}
+
+#topnav{
+  display: block;
+}
+
+.nav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 24px;
+/*   margin-right: 5px; */
+}
+
+.nav a:hover {
+  background-color: #FFBF00;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #1E1840;
+  color: white;
+}
+
+.nav .icon {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+h2{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+h3 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin-bottom: 20px;
+}
+
+main{
+  position: relative;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+  max-width: 55%;
+  margin: 50px auto 150px;
+}
+
+main article {
+  margin-bottom: 70px;  
+}
+
+.question{
+  font-weight: bold;
+}
+.mainfig {
+  display: inline-block;
+  margin-left: 25%;
+  margin-bottom: 50px;
+}
+
+.mainfig .fig2{
+  width: 600px;
+  height: 350px;
+}
+
+.bottomNav{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 100px 100px;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 30px;
+  color: teal;
+  padding: 15px 30px;
+  background-color: #FFBF00;
+}
+
+.next {
+  position: absolute;
+  right: 4%;
+  top: -15px;
+}
+
+footer {
+  margin-bottom: 100px;
+}
+
+form {
+  margin: 150px 200px;
+  font-size: 20px;
+  max-width: 60%;
+  position: relative;
+}
+
+label{
+  margin: 10px 2% 10px 20%;
+  font-weight: 800;
+  width: 400px;
+}
+
+input{
+  width: 300px;
+  margin: 10px 2% 15px 20%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: outset 2px teal;
+  border-radius: 5px;
+}
+
+textarea {
+  margin: 10px 2% 30px 20%;
+  border: outset 2px teal;
+  border-radius: 5px;
+}
+
+button {
+  background-color: teal; /* Navy-blue */
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  left: 20%;
+  border-radius: 5px;
+}

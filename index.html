@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Chinese Postman Problem</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/master.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" sizes="96x96" 
+          href="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2Ffavicon-96x96.png?v=1606820409073">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Merriweather:ital,wght@1,300&display=swap" 
+          rel="stylesheet">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="only screen and (min-width: 1050px)" href="desktop.css">
+    <link rel="stylesheet" media="only screen and (max-width: 550px)" href="/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 551px) and (max-width: 1050px)" href="tablet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <header class="topbar">
+      <div class="logo">
+        <img src="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2FBlack_on_white.svg?v=1605709742737" 
+             alt="logo" width="80" height="80">
+        <span class="name">paradoxes</span>
+      </div>
+      <div class="nav" id="topnav">
+        <a class="active" href="/index.html">Chinese Postman</a>
+        <a href="/monty-hall.html">Monty Hall</a>
+        <a href="/barber.html">Barber</a>
+        <a href="/zeno.html">Zeno</a>
+        <a href="/rich-guest.html">Rich Guest</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    
+      <h1>The Chinese Postman Problem</h1>
+    <main>
+      <h3>Introduction</h3>
+      <article class="intro">
+          Have you ever imagined if you could travel along a route starting at an intersection or point and returning to
+          the same intersection by traversing each street, lane or road of the route exactly
+          once? What about drawing a diagram in a continuous motion through a set of points
+          without lifting a pencil so that no part of the picture is retraced? Try doing it on the diagram below.
+      </article>
+      
+      <div class="mainfig">
+        <img class="fig1" src="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2Fscimitar.PNG?v=1605712960114" 
+        alt="example of traceable diagram"> 
+      </div>
+      
+      <article class="intro">
+        Imagine you saw a store selling something you are interested while you were in a car.
+        Now you get home and days later you are interested in purchasing this thing, but
+        you do not remember the actual street and store. With no luck in internet searching
+        or with asking neighbours your only choice is to go street by street looking for this
+        store. In order not to waste your time and energy, you will like to take the shortest
+        length through all the streets. Therefore, you will like to avoid traversing the same
+        street over and over as this will waste your time. Also, you might even lose track
+        of the streets you have traversed already. Ideally, you would like to traverse each
+        street once and if not possible, traverse each route the least number of times. This
+        problem is similar to an old problem that has been bothering lots of people. It is very similar
+        to the question asked by the people of Konigsberg(<a href="#news">Konigsberg Bridge Problem</a>) but with a little modification to
+        the conditions. These problem and similar ones have been termed generally as the
+        Chinese Postman Problem after the great Chinese mathematician, Meigu Guan.
+      </article>
+      
+      <h3>The Problem</h3>
+      <article class="problem">
+      The Chinese Postman problem is a closely related problem. Chinese mathematician
+      Meigu Guan, who had been a postman himself, posed this problem in 1962. Guan stated the problem simply as: 
+      "A mailman has to cover his assigned segment before
+      returning to the post office. The problem is to find the shortest walking distance for
+      the mailman." To make it clear, the mailman has to deliver a mail to at least one
+      box on every street in his or her assigned segment. In contrast to the <a href="#news">Konigsberg Bridge Problem</a>, 
+      the Chinese postman problem asks for the shortest walk length passing
+      each street, lane or road at least once. Therefore, although the postman can use a
+      road multiple times, the shortest walking length always seeks to reduce the number
+      of times he traverses a specific road. From figure below, if a postman starts at A, he
+      is supposed to traverse all the streets, represented as edges, at least once and return back to his starting
+      point. The problem the Chinese postman seeks to answer is "what is the shortest
+      walking path the postman can take following the conditions above". In situations
+      like the one in figure below, it is easy to carve such a path, but it gets difficult when we
+      place the postman in large urban areas and even cities.
+      </article>
+      
+      <div class="mainfig">
+        <img class="fig2" src="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2Froute.PNG?v=1605719502782" 
+        alt="diagram of postman route"> 
+      </div>
+      
+      <h3> Real World Applications/Situations</h3>
+      <article class="applications"> 
+        This problem and its solutions have become very popular due to its varied applications
+        in a number of practical situations aside mail delivery. The problem exists or can exist
+        in almost all delivery and distribution managements industries. Examples of such fields are:
+        <ul>
+          <li>Garbage collection</li>
+          <li>School bus routing</li>
+          <li>Police patrolling</li>
+          <li>Snow removal</li>
+          <li>Road gritting</li>
+          <li>Street cleaning operations</li>
+        </ul>
+        For instance,
+        a company like Amazon which makes a lot of deliveries in a particular area would
+        rather a driver find the shortest possible drive length to reduce time spent and fuel
+        consumption. With the need for efficiency, companies and governments have been
+        researching this problem in hopes of finding better solutions to reduce wastage of
+        resources.
+      </article>
+  
+    </main>
+    
+    <h2>
+      Leave a comment <a href="/form.html">here.</a> <br>
+        Check the other interesting math problems.
+    </h2>
+    <div class="bottomNav">
+      <span class="icon back" style="opacity:0.5;">
+        <i class="fas fa-long-arrow-alt-left"></i>
+        </span>
+      <a href="/monty-hall.html"><span class="icon next">
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </span></a>
+    </div>
+    
+    <footer class="topbar">
+      <div class="logo">
+        <img src="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2FBlack_on_white.svg?v=1605709742737" 
+             alt="logo" width="80" height="80">
+      </div>
+      <div class="nav">
+        <a class="active" href="/index.html">Chinese Postman</a>
+        <a href="/monty-hall.html">Monty Hall</a>
+        <a href="/barber.html">Barber</a>
+        <a href="/zeno.html">Zeno</a>
+        <a href="/rich-guest.html">Rich Guest</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
