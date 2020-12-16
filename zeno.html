@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Zeno's Paradox</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/master.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" sizes="96x96" 
+          href="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2Ffavicon-96x96.png?v=1606820409073">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Merriweather:ital,wght@1,300&display=swap" 
+          rel="stylesheet">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="only screen and (min-width: 1050px)" href="desktop.css">
+    <link rel="stylesheet" media="only screen and (max-width: 550px)" href="/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 551px) and (max-width: 1050px)" href="tablet.css">
+<!--     <link rel="stylesheet" media="only screen and (min-width: 1050px)" href="desktop.css"> -->
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <header class="topbar">
+      <div class="logo">
+        <img src="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2FBlack_on_white.svg?v=1605709742737" 
+             alt="logo" width="80" height="80">
+        <span class="name">paradoxes</span>
+      </div>
+      <div class="nav" id="topnav">
+        <a href="/index.html">Chinese Postman</a>
+        <a href="/monty-hall.html">Monty Hall</a>
+        <a href="/barber.html">Barber</a>
+        <a class="active" href="/zeno.html">Zeno</a>
+        <a href="/rich-guest.html">Rich Guest</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    
+      <h1>Zeno's Paradox</h1>
+    <main>
+      <h3>Introduction</h3>
+      <article class="intro">
+          This is my favorite paradox of all time. Trying to reason this paradox out without rigorous 
+        mathematical proofs can make your brain squirm. It just seems so plausible logically even though you know 
+        it isn't in reality.
+      </article>
+      
+      <article class="intro">
+        This paradox is attributed to Zeno of Elea (c. 450 BCE). This paradox is or was famously called the Paradox of 
+        the Tortoise and Achilles. The paradox can be rephrased simply as:
+      </article>
+      
+      <h3>The Problem</h3>
+      <article class="problem">
+      Suppose I wish to cross the room. First, of course, I must cover half the distance. Then, 
+        I must cover half the remaining distance. Then, I must cover half the remaining distance. 
+        Then I must cover half the remaining distance…and so on forever. The consequence is that I can 
+        never get to the other side of the room and that no matter how fast or far ago, there is always a half of that number.
+        So according to Zeno, this makes motion implausible. But in reality, we have all walked from one place to another successfully.
+        So how come both of this truths can co-exist? 🤕
+      </article>
+      
+      <div class="mainfig">
+        <img class="fig2" src="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2Farchilles.jpg?v=1605819948242" 
+        alt="diagram of Zeno's Paradox"> 
+      </div>
+      
+      <h3>How!! </h3>
+      <article class="applications"> 
+        At first, this may seem impossible: adding up an infinite number of positive distances should give 
+        an infinite distance for the sum. But it doesn’t—in this case it gives a finite sum; indeed, all these 
+        distances add up to 1! This is where a rigorous mathematical proof is required. Intregal calculus provides an elegant 
+        proof as to how it works. I would not go into the solution since the reason for writing this is to intrigue you to read
+        more on these paradoxes.
+        A little reflection will reveal that this isn’t so strange after all: if I can divide 
+        up a finite distance into an infinite number of small distances, then adding all those distances together 
+        should just give me back the finite distance I started with. (An infinite sum such as the one above is known 
+        in mathematics as an infinite series; when such a sum adds up to a finite number, we say that the series is summable.)
+      </article>
+      
+      <div class="mainfig">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EfqVnj-sgcc" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>Zeno Paradox Video</iframe>
+      </div>
+        
+    </main>
+    
+    <h2>
+      Leave a comment <a href="/form.html">here.</a> <br>
+        Check the other interesting math problems
+    </h2>
+    <div class="bottomNav">
+      <a href="/barber.html"><span class="icon back">
+        <i class="fas fa-long-arrow-alt-left"></i>
+        </span></a>
+      <a href="/rich-guest.html"><span class="icon next">
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </span></a>
+    </div>
+    
+    <footer class="topbar">
+      <div class="logo">
+        <img src="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2FBlack_on_white.svg?v=1605709742737" 
+             alt="logo" width="80" height="80">
+      </div>
+      <div class="nav">
+        <a href="/index.html">Chinese Postman</a>
+        <a href="/monty-hall.html">Monty Hall</a>
+        <a href="/barber.html">Barber</a>
+        <a class="active" href="/zeno.html">Zeno</a>
+        <a href="/rich-guest.html">Rich Guest</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+  </body>
+</html>

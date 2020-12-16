@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Form</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/master.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" sizes="96x96" 
+          href="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2Ffavicon-96x96.png?v=1606820409073">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Merriweather:ital,wght@1,300&display=swap" 
+          rel="stylesheet">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="only screen and (min-width: 1050px)" href="desktop.css">
+    <link rel="stylesheet" media="only screen and (max-width: 550px)" href="/mobile.css">
+    <link rel="stylesheet" media="only screen and (min-width: 551px) and (max-width: 1050px)" href="tablet.css">
+  </head> 
+  <body>
+    <header class="topbar">
+      <div class="logo">
+        <img src="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2FBlack_on_white.svg?v=1605709742737" 
+             alt="logo" width="80" height="80">
+        <span class="name">paradoxes</span>
+      </div>
+      <div class="nav" id="topnav">
+        <a href="/index.html">Chinese Postman</a>
+        <a href="/monty-hall.html">Monty Hall</a>
+        <a href="/barber.html">Barber</a>
+        <a href="/zeno.html">Zeno</a>
+        <a href="/rich-guest.html">Rich Guest</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    
+    <form action="https://formspree.io/f/xayldand" method="POST">
+      <label> First Name:</label><br>
+      <input type="text" name="first_name" placeholder="First name" required><br>
+      <label>Last Name:</label><br>
+      <input type="text" name="last_name" placeholder="Last name" required><br>
+      <label>Your email:</label><br>
+      <input type="email" name="_replyto" placeholder="example@domain.com" required><br>
+      <label> Comments:</label><br>
+      <textarea name="message" rows="5" cols="50"></textarea><br>
+      
+      <button type="submit">Send</button>
+    </form>
+    
+    <h2>
+      You like my page? FreeCode camp can help you. Check out my 
+      <a href="https://www.freecodecamp.org/des-cloud">portfolio</a> there.
+    </h2>
+    <div class="bottomNav">
+      <a href="/rich-guest.html"><span class="icon back">
+        <i class="fas fa-long-arrow-alt-left"></i>
+        </span></a>
+      <span class="icon next" style="opacity: 0.5;">
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </span>
+    </div>
+    
+    <footer class="topbar">
+      <div class="logo">
+        <img src="https://cdn.glitch.com/0caddddc-7d8c-466c-bdc8-aadcaa8e6c5a%2FBlack_on_white.svg?v=1605709742737" 
+             alt="logo" width="80" height="80">
+      </div>
+      <div class="nav">
+        <a href="/index.html">Chinese Postman</a>
+        <a href="/monty-hall.html">Monty Hall</a>
+        <a href="/barber.html">Barber</a>
+        <a href="/zeno.html">Zeno</a>
+        <a href="/rich-guest.html">Rich Guest</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="/script.js" defer></script>
+  </body>
+  
+</html>

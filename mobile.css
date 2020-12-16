@@ -1,0 +1,171 @@
+.topbar{
+  background-color: #09A7A1;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  position: relative;
+}
+
+.topbar .logo{
+  display: flex;
+  justify-self: flex-start;
+  float: left;
+  margin-left: 20px;
+}
+
+.name{
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: 800;
+  align-self: center;
+}
+
+.topbar .nav{
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+}
+
+.nav a {
+  display: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 16px;
+/*   margin-right: 5px; */
+}
+
+.nav a:not(:first-child) {
+  display: none;
+}
+
+.nav a.icon {
+    display: inline-block;
+}
+
+.nav.responsive {
+  position: relative;
+  margin-left: 9%;
+}
+
+.nav.responsive .icon {
+  position: absolute;
+  right: -18%;
+  top: 0;
+}
+
+.nav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+h2{
+  margin-left: 10px;
+  font-size: 20px;
+}
+main{
+  position: relative;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+  max-width: 90%;
+  margin: 50px auto 150px;
+}
+
+.question{
+  font-weight: bold;
+}
+
+.mainfig {
+  display: inline-block;
+  margin-left: 5%;
+  margin-bottom: 50px;
+}
+
+.mainfig .fig1, iframe{
+  width: 90%;
+  height: 350px;
+}
+
+.fig2{
+  width: 90%;
+}
+
+.bottomNav{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 10px 100px;
+  position: relative;
+}
+
+.icon {
+  font-size: 30px;
+  color: teal;
+  padding: 15px 30px;
+}
+
+.next {
+  position: absolute;
+  right: 4%;
+  top: -15px;
+}
+
+footer {
+  margin-bottom: 100px;
+}
+
+form {
+  margin: 10% 0 30% 0;
+  font-size: 20px;
+  max-width: 40%;
+  position: relative;
+}
+
+label{
+  margin: 10px 2% 10px 5%;
+  font-weight: 800;
+  max-width: 100%;
+}
+
+input{
+  width: 200px;
+  margin: 10px 2% 10px 5%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: outset 2px teal;
+  border-radius: 5px;
+}
+
+textarea {
+  margin: 10px 2% 30px 5%;
+  border: outset 2px teal;
+  border-radius: 5px;
+  width: 16em;
+}
+
+button {
+  background-color: teal; /* Navy-blue */
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  left: 5%;
+  border-radius: 5px;
+}
+
+.error{
+  font-size: 8px;
+  color: red;
+  margin-bottom: -15px;
+  margin-right: 0;
+}
